@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html  class="language_zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="[]">
+    <meta name="generator" content="teedoc">
+    <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?90c693aa2475224142e727c14a50bb49";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <title>MaixPy</title>
+</head>
+<body>
+    
+            <div id="navbar">
+                <div id="navbar_menu">
+                    <a class="site_title" href="/"><img class="site_logo" src="/static/image/logo.png" alt="MaixPy3 logo"><h2>MaixPy3</h2></a>
+                    <a id="navbar_menu_btn"></a>
+                </div>
+                <div id="navbar_items">
+                    <div>
+                        <ul id="nav_left">
+<li class=""><a  href="/maixpy/zh/">MaixPy</a></li>
+<li class="active"><a  href="/maixpy3/zh/">MaixPy3</a></li>
+</ul>
+
+                    </div>
+                    <div>
+                        <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/sipeed">github</a></li>
+<li class="sub_items"><a>语言: 中文</a><ul><li class="active"><a  href="/maixpy3/zh/">中文</a></li>
+<li class=""><a  href="/maixpy3/en/">English</a></li>
+</ul>
+</li>
+</ul>
+
+                        <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+                    </div>
+                </div>
+            </div>
+    
+        <div id="wrapper">
+            
+            <div id="sidebar_wrapper">
+                <div id="sidebar">
+                    <div id="sidebar_title">
+                        
+                    </div>
+                    <ul class="show">
+<li class="not_active with_link"><a href="/maixpy3/zh/index.html"><span class="label">什么是 MaixPy3 ？</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/maixpy3/zh/origin/python.html"><span class="label">什么是 Python 编程语言？</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/origin/difference.html"><span class="label">MaixPy 与 MaixPy3 的区别</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">新手上路</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/maixpy3/zh/guide/project.html"><span class="label">项目使用说明</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/guide/feedback.html"><span class="label">如何反馈问题</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/guide/participate.html"><span class="label">如何参与项目（需要开发基础）</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="active_parent with_link"><a href="/maixpy3/zh/install/index.html"><span class="label">如何安装 MaixPy3 </span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/maixpy3/zh/install/linux_x86_64/index.html"><span class="label">Linux x86_64</span><span class=""></span></a></li>
+<li class="active_parent with_link"><a href="/maixpy3/zh/install/maixii_m2dock/index.html"><span class="label">MaixII Dock</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/maixpy3/zh/install/maixii_m2dock/introduce.html"><span class="label">芯片平台介绍</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/install/maixii_m2dock/resources.html"><span class="label">板级资源介绍</span><span class=""></span></a></li>
+<li class="active_parent with_link"><a href="/maixpy3/zh/install/maixii_m2dock/verify.html"><span class="label">产品开箱验证</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/maixpy3/zh/install/maixii_m2dock/drive.html"><span class="label">安装驱动</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/maixpy3/zh/install/maixii_m2dock/flash.html"><span class="label">烧录系统</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/install/maixii_m2dock/config.html"><span class="label">配置系统</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/install/maixii_m2dock/usage.html"><span class="label">上手使用</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">除此之外？</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/maixpy3/zh/install/others/platform.html"><span class="label">如何适配你的平台</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/install/others/product.html"><span class="label">如何提交你的产品</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/maixpy3/zh/tools/index.html"><span class="label">常用的开发工具</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/maixpy3/zh/tools/mobaxterm.html"><span class="label">MobaXterm</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/tools/jupyter.html"><span class="label">Jupyter</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/tools/vscode.html"><span class="label">VSCode</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/tools/pyqt_rtsp.html"><span class="label">pyqt_rtsp</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/maixpy3/zh/usage/index.html"><span class="label">一些使用案例</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/maixpy3/zh/usage/00_hello_world.html"><span class="label">[00] 你好，世界。</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/usage/01_loop_python.html"><span class="label">[01] 循环 Python 代码</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/usage/02_blink_led.html"><span class="label">[02] 闪烁 LED 吧！</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/usage/03_key_led.html"><span class="label">[03] 按下按键开关灯</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/usage/04_display_screen.html"><span class="label">[04] 把图片显示到屏幕</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/usage/05_camera_capture.html"><span class="label">[05] 捕获摄像头一帧图片</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/usage/06_training_model.html"><span class="label">[06] 训练 AI 模型</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/usage/07_verify_model.html"><span class="label">[07] 输入图像验证模型</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">内置模块说明</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">Maix 模块</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/maixpy3/zh/module/maix/display.html"><span class="label">display</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/module/maix/camera.html"><span class="label">camera</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/module/maix/rpycs.html"><span class="label">rpycs</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Linux 模块</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/maixpy3/zh/module/linux/gpio.html"><span class="label">GPIO</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/module/linux/i2c.html"><span class="label">I2C</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/module/linux/spi.html"><span class="label">SPI</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/module/linux/input.html"><span class="label">Iuput</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/module/linux/pwm.html"><span class="label">PWM</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/module/linux/uart.html"><span class="label">UART</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/module/linux/bluetooth.html"><span class="label">Bluetooth</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/module/linux/audio.html"><span class="label">Audio</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/module/linux/usb.html"><span class="label">USB</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">C 扩展模块</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">libmaix</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/maixpy3/zh/module/ext/_maix.html"><span class="label">_maix</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/module/ext/_maix_display.html"><span class="label">_maix_display</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/module/ext/_maix_camera.html"><span class="label">_maix_camera</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/module/ext/_maix_nn.html"><span class="label">_maix_nn</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/maixpy3/zh/module/ext/libi2c.html"><span class="label">libi2c</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="https://docs.python.org/3/library/" ><span class="label">Python3 标准库</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">支持的芯片平台</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">针对不同平台的开发方法</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/maixpy3/zh/platform/develop_linux_x86_64.html"><span class="label">linux_x86_64</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/platform/develop_v831.html"><span class="label">v831</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/platform/develop_rv1126.html"><span class="label">rv1126</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/maixpy3/zh/platform/others.html"><span class="label">如何支持其他平台的说明</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">常见问题</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/maixpy3/zh/question/how_to_ask.html"><span class="label">如何提交你的问题?</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/question/driver_issue.html"><span class="label">驱动安装 常见问题集合</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/question/jupyter_issue.html"><span class="label">Jupyter 常见问题集合</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/maixpy3/zh/question/maixpy3_issue.html"><span class="label">MaixPy3 常见问题集合</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+
+                </div>
+            </div>
+            <div id="menu_wrapper">
+                                    <div id="menu">
+                                    </div>
+                                </div>
+            <div id="article">
+                <div id="content_wrapper">
+                    <div id="content_body">
+                        <div id="article_title">
+                            <h1></h1>
+                        </div>
+                        <div id="article_tags">
+                            <ul></ul>
+                        </div>
+                        <div id="article_content">
+                            <h1 id="sipeed-v831">Sipeed V831 使用文档（初稿）</h1>
+
+<table>
+<thead>
+<tr>
+  <th>日期</th>
+  <th>编辑人</th>
+  <th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>2021年1月21日</td>
+  <td>大佬鼠</td>
+  <td>该版本仅在交流群范围内使用，不对外流通。</td>
+</tr>
+<tr>
+  <td>2021年1月21日</td>
+  <td>大佬鼠</td>
+  <td>增加更多讯息</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="-1">检查硬件</h2>
+
+<p>当你拿到硬件，先检查外观是否有破损，请先确认天线/屏幕/摄像头均无破损，通电后电源红灯（power）亮起，表示硬件进入工作状态，注意两个 TypeC 口的用途不同的。</p>
+
+<h3 id="-2">如何连接串口？</h3>
+
+<ul>
+<li><p>确保插入电脑通电后硬件可以被识别成串口设备。</p></li>
+<li><p>参考  <a href="https://maixpy.sipeed.com/zh/get_started/install_driver/nano.html?h=%E5%AE%89%E8%A3%85%E9%A9%B1%E5%8A%A8">Maix USB 驱动安装 </a> 完成驱动的安装。</p></li>
+<li>懒人就用  <a href="https://share.weiyun.com/9H2RSOND">V831>驱动精灵</a> 自动安装驱动。</li>
+</ul>
+
+<h2 id="v831">给 V831 烧录系统</h2>
+
+<p>请参考 <a href="https://thoughts.teambition.com/share/5ff5aa2068c1c000466f61f3">V831 镜像烧录</a> 完成系统的烧写。</p>
+
+<h2 id="linux">配置你的 linux 系统</h2>
+
+<p>使用 <a href="https://share.weiyun.com/9H2RSOND">V831>MobaXterm_20.0汉化</a> 连接设备串口（serial）进行系统的配置，串口设置为 115200 波特率。</p>
+
+<blockquote>
+  <p>截至 2021-01-26 的 V831 M2DOCK 采用的是双串口固件，可以在进入串口后按回车确认是否选对串口，若没有反应可以按复位键确认，仍然不对，则需要切换串口再试。</p>
+</blockquote>
+
+<p>在烧录镜像后第一次进入系统需要很久很久的等待系统初始化，如果超时没有反应可以按复位键重新进入系统，若是一直存在问题请将开机过程中出现的问题附图提交至社区（bbs.sipeed.com）。</p>
+
+<blockquote>
+  <p>2021年01月23日：系统已经内置了 ssh 和 ftp 并在开机后自动启动，服务配置于 <code>/etc/init.d/S40network</code> 。</p>
+</blockquote>
+
+<p>进入系统后看到 <code>root@sipeed:/#</code> 提示就可以进行 linux 系统交互操作，输入命令 <code>maixpy3_config.py</code> 进行系统配置，有如下配置。</p>
+
+<ul>
+<li>配置你的 root 用户的密码（默认:<code>123</code>），与 ssh &amp; ftp 共用。</li>
+<li>配置你的 WIFI 热点账号（ssid）密码（pasw）</li>
+</ul>
+
+<blockquote>
+  <p>WIFI 配置文件位于 <code>/etc/wpa_supplicant.conf</code> 。</p>
+</blockquote>
+
+<p>确认存在连接网络并获得 IP 地址了后，会进行 <code>pip install maixpy3</code> 包安装和最后的 <code>opkg update</code> 软件源更新。</p>
+
+<pre><code class="shell language-shell">root@sipeed:/# maixpy3_config.py 
+
+need config your password?(passwd) [Ctrl + C &gt; Exit] 
+Changing password for root
+New password: 
+Bad password: too short
+Retype password: 
+passwd: password for root changed by root
+
+config your wifi... [Ctrl + C &gt; Exit] 
+input your wifi name... Sipeed_2.4G
+input your wifi password... Sipeed123.
+
+[wifi] path: /etc/wpa_supplicant.conf
+
+[wifi] result: ctrl_interface=/var/run/wpa_supplicant
+update_config=1
+
+network={
+    ssid="Sipeed_2.4G"
+    psk="Sipeed123."
+}
+/etc/init.d/S40network restart
+Stopping network...
+kill: you need to specify whom to kill
+Starting network...
+Successfully initialized wpa_supplicant
+udhcpc: started, v1.27.2
+udhcpc: sending discover
+udhcpc: sending discover
+udhcpc: sending select for 192.168.0.156
+udhcpc: lease of 192.168.0.156 obtained, lease time 7200
+udhcpc: ifconfig wlan0 192.168.0.156 netmask 255.255.255.0 broadcast 192.168.0.255
+udhcpc: setting default routers: 192.168.0.1
+tcpsvd: bind: Address in use
+
+[wifi] The IP address of your device, please remember.
+
+           inet addr:192.168.0.156  Bcast:192.168.0.255  Mask:255.255.255.0
+
+
+config your maxipy3... [Ctrl + C &gt; Exit]
+
+
+[maixpy3] pip install maixpy3 --upgrade
+Collecting maixpy3
+  Downloading MaixPy3-0.1.9-cp38-cp38-linux_armv7l.whl (1.0 MB)
+     |████████████████████████████████| 1.0 MB 43 kB/s 
+Collecting pexpect
+  Downloading pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+     |████████████████████████████████| 59 kB 71 kB/s 
+Collecting rpyc
+  Downloading rpyc-5.0.1-py3-none-any.whl (68 kB)
+     |████████████████████████████████| 68 kB 42 kB/s 
+Requirement already satisfied, skipping upgrade: Pillow in /usr/lib/python3.8/site-packages (from maixpy3) (7.2.0)
+Collecting ptyprocess&gt;=0.5
+  Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Collecting plumbum
+  Downloading plumbum-1.6.9-py2.py3-none-any.whl (115 kB)
+     |████████████████████████████████| 115 kB 84 kB/s 
+Installing collected packages: ptyprocess, pexpect, plumbum, rpyc, maixpy3
+Successfully installed maixpy3-0.1.9 pexpect-4.8.0 plumbum-1.6.9 ptyprocess-0.7.0 rpyc-5.0.1
+WARNING: You are using pip version 20.1.1; however, version 21.0 is available.
+You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
+
+[maixpy3] cp /etc/init.d/S40network /etc/init.d/S40network.old
+
+[update] opkg update
+Downloading http://mirror.sipeed.com/maix_ii/base/Packages.gz.
+Updated list of available packages in /var/opkg-lists/base.
+Downloading http://mirror.sipeed.com/maix_ii/kernel/Packages.gz.
+Updated list of available packages in /var/opkg-lists/kernel.
+Downloading http://mirror.sipeed.com/maix_ii/luci/Packages.gz.
+Updated list of available packages in /var/opkg-lists/luci.
+Downloading http://mirror.sipeed.com/maix_ii/management/Packages.gz.
+Updated list of available packages in /var/opkg-lists/management.
+Downloading http://mirror.sipeed.com/maix_ii/packages/Packages.gz.
+Updated list of available packages in /var/opkg-lists/packages.
+Downloading http://mirror.sipeed.com/maix_ii/routing/Packages.gz.
+Updated list of available packages in /var/opkg-lists/routing.
+Downloading http://mirror.sipeed.com/maix_ii/targets/Packages.gz.
+Updated list of available packages in /var/opkg-lists/targets.
+Downloading http://mirror.sipeed.com/maix_ii/telephony/Packages.gz.
+Updated list of available packages in /var/opkg-lists/telephony.
+
+[config] The configuration is finished, thanks for using. Mon Jan 25 02:42:51 2021
+root@sipeed:/# 
+
+</code></pre>
+
+<p>如果未能连接到网络，则会提前退出配置流程，此时可以重新运行输入配置过程，如下所示。</p>
+
+<pre><code class="shell language-shell">root@sipeed:/# maixpy3_config.py 
+
+need config your password?(passwd) [Ctrl + C &gt; Exit] 
+Changing password for root
+New password: 
+Bad password: too short
+Retype password: 
+passwd: password for root changed by root
+
+config your wifi... [Ctrl + C &gt; Exit] 
+input your wifi name... sipeed_wifi
+input your wifi password... sipeed_pswd
+
+[wifi] path: /etc/wpa_supplicant.conf
+
+[wifi] result: ctrl_interface=/var/run/wpa_supplicant
+update_config=1
+
+network={
+    ssid="sipeed_wifi"
+    psk="sipeed_pswd"
+}
+/etc/init.d/S40network restart
+Stopping network...
+kill: you need to specify whom to kill
+killall: wpa_supplicant: no process killed
+Starting network...
+Successfully initialized wpa_supplicant
+udhcpc: started, v1.27.2
+udhcpc: sending discover
+udhcpc: sending discover
+udhcpc: sending discover
+udhcpc: no lease, forking to background
+tcpsvd: bind: Address in use
+
+[wifi] Your device is not connected to the Internet, shell input &gt;&gt;&gt; maixpy3_config.py -ssid wifi_name -pasw wifi_pasw
+
+[maixpy3] No Connect Network ...
+
+
+[config] The configuration is finished, thanks for using. Mon Jan 25 02:41:21 2021
+root@sipeed:/# 
+
+</code></pre>
+
+<blockquote>
+  <p>上述每个步骤不想配置就可以用 [Ctrl + C] 跳过。</p>
+</blockquote>
+
+<p>此后系统会开机启动远程调用服务（RPyC），你可以在 <code>ps</code> 命令中得知是否开启了 rpyc 远程调用服务。</p>
+
+<p><strong>注：使用 MobaXterm 连接 Serial、ssh、FTP 等服务，账号和密码与上述设置的一致。</strong></p>
+
+<h2 id="jupyter">启动 jupyter 软件</h2>
+
+<p>输入 <code>ifconfig</code> 命令即可出现你的 IP 地址即可，在上述配置过程中也可以看到。</p>
+
+<p>Windows 用户安装 <a href="https://www.anaconda.com/download/">anaconda</a> 软件，国内下载推荐<a href="https://mirror.tuna.tsinghua.edu.cn/help/anaconda/">清华源</a>，安装后系统就会添加 <code>python / pip / jupyter</code> 等命令。</p>
+
+<ul>
+<li>在 Linux 下运行 <code>pip3 install rpyc_ikernel &amp;&amp; python3 -m rpyc_ikernel.install</code></li>
+<li>在 Windows 下运行 <code>pip install rpyc_ikernel &amp;&amp; python -m rpyc_ikernel.install</code></li>
+</ul>
+
+<p>确保有环境后，输入 <code>jupyter notebook</code> 启动编辑器，选中 RPyC 内核即可。</p>
+
+<blockquote>
+  <p>你也可以使用 jupyter lab 来启动，或是在 VSCode 里直接打开 jupyter 文档运行代码（不需要额外执行 jupyter notebook）。</p>
+</blockquote>
+
+<p>更详细的可以参考 <a href="https://github.com/sipeed/rpyc_ikernel">rpyc_ikernel</a> 仓库说明。</p>
+
+<h2 id="-3">运行代码</h2>
+
+<p>在运行代码前，请配置 IP 地址进行连接，否则默认连接到 "localhost" 的地址请求 rpyc 服务。</p>
+
+<pre><code class="python language-python">$connect("192.168.43.44")
+import platform
+print(platform.uname())
+</code></pre>
+
+<p>可见返回结果如下：</p>
+
+<pre><code class="shell language-shell">uname_result(system='Linux', node='linux-lab', release='5.4.0-56-generic', version='#62-Ubuntu SMP Mon Nov 23 19:20:19 UTC 2020', machine='x86_64', processor='x86_64')
+</code></pre>
+
+<p>本地运行摄像头显示到屏幕的代码如下：</p>
+
+<pre><code class="python language-python">from maix import display, camera
+while True:
+  im = camera.capture()
+  if im:
+      display.show(im)
+</code></pre>
+
+<p>如需实时图传到本机，请查阅该文档 <a href="https://github.com/sipeed/rpyc_ikernel/blob/master/examples/usage_display.ipynb">examples/usage_display.ipynb</a> 获取使用方法，运行它会把屏幕显示的图像传到浏览器的 jupyter notebook 编辑框中，在谷歌内核或360极速浏览器上测试通过。</p>
+
+<blockquote>
+  <p>想要进一步提升图传性能需要用专门的图传客户端 <a href="https://github.com/sipeed/MaixPy3/tree/main/bin/rtsp_pyqt">rtsp_pyqt</a>。</p>
+</blockquote>
+
+<h2 id="-4">常见问题</h2>
+
+<ul>
+<li><p>系统烧录步骤严格按照，先打开软件，拔 SD 卡后插入电脑，等待提示确认后再插入 SD 卡自动完成安装。</p></li>
+<li><p>系统出现乱码进不去系统，此时应当重烧镜像，如果仍然出现，则需要更换 SD 卡重来。</p></li>
+<li><p>由于有些国内网络环境不佳导致 maixpy3 安装不上，可以通过 <code>pip install MaixPy3 -i http://pypi.python.org/pypi --trusted-host pypi.python.org</code> 指定国内的 pip 软件源进行安装。</p></li>
+</ul>
+
+<h3 id="jupyter-2">使用 jupyter 连不上的硬件</h3>
+
+<p>如果发现 jupyter 连接不上硬件，确定你已经选中并使用 RPyc 的内核。</p>
+
+<p>优先检查本地网络防火墙端口放行规则（如 360 安全软件），确保能够 <code>ping</code> 通硬件 IP 地址。</p>
+
+<pre><code class="shell language-shell">juwan@juwan-N85-N870HL:~$ ping 192.168.0.156
+PING 192.168.0.156 (192.168.0.156) 56(84) bytes of data.
+64 bytes from 192.168.0.156: icmp_seq=1 ttl=64 time=304 ms
+64 bytes from 192.168.0.156: icmp_seq=2 ttl=64 time=3.94 ms
+</code></pre>
+
+<p>确定本机网络没有问题后，可以确认硬件中的 <code>ps | grep python</code> 打印的进程中是否还存在 <code>root     14880 S    python3 -c "from maix import rpycs; rpycs.start()"</code> 的进程状态为 S （运行中），如果不存在或状态为 R 则需要重启或自行手动运行 <code>python3 -c "from maix import rpycs; rpycs.start()"</code> 命令，系统默认自启。</p>
+
+<pre><code class="ps language-ps">root@sipeed:/# ps | grep python
+  815 root     14944 S    python3 -c from maix import rpycs; rpycs.start()
+  880 root      1144 S    grep python
+root@sipeed:/# 
+</code></pre>
+
+<p>如果有其他问题可以提交到社区帖子进行反馈。</p>
+
+<h2 id="-5">相关参考资料</h2>
+
+<ul>
+<li><p><a href="https://thoughts.teambition.com/share/5ffd4d100d65cf00467d502c">MaixII_Dock(V831)_WIFI_使用/测试标准</a></p></li>
+<li><p><a href="https://thoughts.teambition.com/share/600659e9823a3d004a4e1c7a">v831_PIN_引脚和（GPIO）功能的使用</a></p></li>
+<li><p><a href="https://thoughts.teambition.com/share/600950323cf39100462f8782">I2C_功能测试</a></p></li>
+<li><p><a href="https://github.com/sipeed/MaixPy3">CPython3 MaixPy3</a></p></li>
+<li><p><a href="https://github.com/sipeed/rpyc_ikernel">jupyter rpyc_ikernel</a></p></li>
+<li><p><a href="https://github.com/sipeed/MaixPy3/tree/main/bin/rtsp_pyqt">rtsp_pyqt 图传客户端</a></p></li>
+</ul>
+
+                        </div>
+                    </div>
+                    <div id="previous_next">
+                        <div id="previous">
+                            <a href="/maixpy3/zh/install/maixii_m2dock/drive.html"><span class="icon"></span><span class="label">安装驱动</span></a>
+                        </div>
+                        <div id="next">
+                            <a href="/maixpy3/zh/install/maixii_m2dock/config.html"><span class="label">配置系统</span><span class="icon"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="toc">
+                    <div>
+                        <ul>
+  <li><a href="#sipeed-v831">Sipeed V831 使用文档（初稿）</a>
+  <ul>
+    <li><a href="#-1">检查硬件</a>
+    <ul>
+      <li><a href="#-2">如何连接串口？</a></li>
+    </ul></li>
+    <li><a href="#v831">给 V831 烧录系统</a></li>
+    <li><a href="#linux">配置你的 linux 系统</a></li>
+    <li><a href="#jupyter">启动 jupyter 软件</a></li>
+    <li><a href="#-3">运行代码</a></li>
+    <li><a href="#-4">常见问题</a>
+    <ul>
+      <li><a href="#jupyter-2">使用 jupyter 连不上的硬件</a></li>
+    </ul></li>
+    <li><a href="#-5">相关参考资料</a></li>
+  </ul></li>
+</ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id="to_top" href="#"></a>
+        <div id="doc_footer">
+                        
+            <div id="footer">
+                <div id="footer_top">
+                    <ul>
+<li><a>链接</a><ul><li><a target="_blank" href="https://www.sipeed.com">Sipeed</a></li>
+<li><a target="_blank" href="https://bbs.sipeed.com/">BBS 论坛</a></li>
+<li><a target="_blank" href="https://sipeed.taobao.com/">Sipeed 淘宝</a></li>
+<li><a target="_blank" href="https://github.com/neutree/teedoc">使用 teedoc 构建</a></li>
+</ul>
+</li>
+<li><a>源码</a><ul><li><a target="_blank" href="https://github.com/sipeed/MaixPy3">MaixPy3</a></li>
+<li><a target="_blank" href="https://github.com/sipeed/MaixPy">MaixPy</a></li>
+<li><a target="_blank" href="https://github.com/sipeed/MaixPy_DOC">文档源文件</a></li>
+</ul>
+</li>
+<li><a>网站统计</a><ul><li><a target="_blank" href="https://tongji.baidu.com/web/welcome/ico?s=90c693aa2475224142e727c14a50bb49">百度统计</a></li>
+<li><a  href="/sitemap.xml">网站地图</a></li>
+</ul>
+</li>
+</ul>
+
+                </div>
+                <div id="footer_bottom">
+                    <ul>
+<li><a target="_blank" href="https://www.sipeed.com">Copyright © 2018-2021 Sipeed Ltd</a></li>
+<li><a target="_blank" href="https://beian.miit.gov.cn">粤ICP备19015433号</a></li>
+</ul>
+
+                </div>
+            </div>
+                    </div>
+</body>
+<script src="/static/js/theme_default/main.js"></script>
+<script src="/static/css/theme_default/prism.min.js"></script>
+<script src="/static/js/custom.js"></script>
+<script src="/static/js/search/main.js"></script>
+</html>
